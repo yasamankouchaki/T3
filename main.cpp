@@ -1,32 +1,22 @@
 #include <iostream>
-
+#define pi 3.14
 using namespace std;
-int operation (int a ,int b, char op)
+float ms(int x)
 {
-    switch (op)
-        {
-        case '+':
-            cout << a+b;
-            break;
-        case '-':
-            cout <<a-b;
-            break;
-        case '*':
-            cout << a*b;
-            break;
-        case '/':
-            cout <<a/b;
-            break;
 
-        }
-    return 0;
+    return (pi*x*x);
 }
+float mh(int y)
+{
+    return (2*pi*y);
+}
+
 int main()
 {
-    int a,b;
-    char op;
-    cin >>a>>op>>b;
-    operation(a,b,op);
-    cout << endl;
+    int r;
+    cout <<"Enter Radius:";
+    cin >>r;
+    cout << "Area:" << ms(r) << endl;
+    cout<< "primeter:" << mh(r);
     return 0;
 }
